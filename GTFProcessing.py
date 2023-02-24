@@ -33,7 +33,9 @@ class GTFProcessing():
         return gtf
     
     def change_columns_name(self):
-        self.df_gtf.columns = ['chr'] + self.df_gtf.columns.values.tolist()[1:]
+        self.df_gtf.columns = ['chr'] + self.df_gtf.columns[1:]
+        #self.df_gtf.columns = ['chr'] + self.df_gtf.columns.values.tolist()[1:]
+
     
     def get_gtf_df(self):
         
