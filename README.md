@@ -6,7 +6,7 @@ GTFProcessing class using the gtf parse tool
 ```
 ```python
 
-
+from GTFProcessing import GTFProcessing
 gtf = GTFProcessing('hg19.refGene.gtf')
 df_gtf_refseq = gtf.get_gtf_df()
 
